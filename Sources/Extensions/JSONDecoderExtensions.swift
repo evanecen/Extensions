@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension JSONDecoder {
-    convenience init(type: KeyDecodingStrategy) {
+public extension JSONDecoder {
+    public convenience init(type: KeyDecodingStrategy) {
         self.init()
         self.keyDecodingStrategy = type
     }

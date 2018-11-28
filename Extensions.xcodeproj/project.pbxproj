@@ -63,7 +63,7 @@
 		0D7BC28821AD397600059146 = {
 			isa = PBXGroup;
 			children = (
-				0D7BC29421AD397600059146 /* Extensions */,
+				0D7BC29421AD397600059146 /* Sources */,
 				0D7BC29F21AD397600059146 /* ExtensionsTests */,
 				0D7BC29321AD397600059146 /* Products */,
 			);
@@ -78,14 +78,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0D7BC29421AD397600059146 /* Extensions */ = {
+		0D7BC29421AD397600059146 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				0D7BC2AC21AD3A0800059146 /* Extensions */,
 				0D7BC29521AD397600059146 /* Extensions.h */,
 				0D7BC29621AD397600059146 /* Info.plist */,
 			);
-			path = Extensions;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		0D7BC29F21AD397600059146 /* ExtensionsTests */ = {
@@ -377,7 +377,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Extensions/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -403,7 +403,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Extensions/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

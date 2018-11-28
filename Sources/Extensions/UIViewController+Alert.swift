@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension UIViewController {
-    func presentAlertController(title: String?, message: String?) {
+public extension UIViewController {
+    public func presentAlertController(title: String?, message: String?) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "ok".localized(), style: .default, handler: nil))
         present(alertController, animated: true, completion: nil)

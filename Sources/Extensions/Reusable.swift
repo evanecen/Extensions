@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol Reusable {
+public protocol Reusable {
     static var reuseIdentifier: String { get }
 }
 
-extension Reusable {
+public extension Reusable {
     static var reuseIdentifier: String {
         return String(describing: self)
     }
@@ -21,7 +21,7 @@ extension Reusable {
 extension UITableViewCell: Reusable {}
 
 extension UITableView: Reusable {
-    func dequeueReusableCell<T: UITableViewCell>() -> T {
+    public func dequeueReusableCell<T: UITableViewCell>() -> T {
         guard let cell = dequeueReusableCell(withIdentifier: T.reuseIdentifier) as? T else {
             fatalError("Unable to Dequeue Reusable Table View Cell")
         }
@@ -29,7 +29,7 @@ extension UITableView: Reusable {
         return cell
     }
     
-    func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T {
+    public func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T {
         guard let cell = dequeueReusableCell(withIdentifier: T.reuseIdentifier, for: indexPath) as? T else {
             fatalError("Unable to Dequeue Reusable Table View Cell")
         }
